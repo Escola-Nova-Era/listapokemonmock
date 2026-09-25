@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pokedex_red">#E3350D</color>
+    <color name="search_background">#F3F4F6</color>
+    <color name="chip_background">#F3F4F6</color>
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#9CA3AF</color>
+    <color name="text_chip">#4B5563</color>
+    <color name="divider">#F3F4F6</color>
+    <color name="icon_muted">#D1D5DB</color>
+
+    <color name="type_grass">#78C850</color>
+    <color name="type_poison">#A040A0</color>
+    <color name="type_fire">#F08030</color>
+    <color name="type_water">#6890F0</color>
+    <color name="type_electric">#F8D030</color>
+    <color name="type_normal">#A8A878</color>
+    <color name="type_fairy">#EE99AC</color>
+    <color name="type_ghost">#705898</color>
+
+    <color name="header_grass">#7AC74C</color>
+    <color name="header_poison">#A040A0</color>
+    <color name="header_fire">#F08A4B</color>
+    <color name="header_water">#6B96F0</color>
+    <color name="header_electric">#F6D048</color>
+    <color name="header_normal">#C2C2A8</color>
+    <color name="header_fairy">#F0A8BC</color>
+    <color name="header_ghost">#7B64A8</color>
+
+    <color name="info_card">#F8F8F8</color>
+    <color name="stat_hp">#F87171</color>
+    <color name="stat_attack">#FB923C</color>
+    <color name="stat_defense">#FBBF24</color>
+    <color name="stat_special_attack">#60A5FA</color>
+    <color name="stat_special_defense">#34D399</color>
+    <color name="stat_speed">#A78BFA</color>
+</resources>

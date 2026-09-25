@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Outer circle -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="36"
+        android:pathData="M256,32
+                          A224,224 0,1 1,256,480
+                          A224,224 0,1 1,256,32" />
+
+    <!-- Horizontal line -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="36"
+        android:strokeLineCap="round"
+        android:pathData="M32,256 L176,256" />
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="36"
+        android:strokeLineCap="round"
+        android:pathData="M336,256 L480,256" />
+
+    <!-- Center ring -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="36"
+        android:pathData="M256,176
+                          A80,80 0,1 1,256,336
+                          A80,80 0,1 1,256,176" />
+
+    <!-- Center button -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M256,226
+                          A30,30 0,1 1,256,286
+                          A30,30 0,1 1,256,226" />
+
+</vector>
