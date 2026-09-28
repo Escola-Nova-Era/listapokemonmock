@@ -1,13 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pokedex_red"
     android:clipChildren="false"
     android:clipToPadding="false"
     tools:context=".MainActivity">
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgPokeBall"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="-32dp"
+            android:alpha="0.28"
+            android:contentDescription="@string/pokeball_decoration"
+            android:src="@drawable/ic_pokeball"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pokedex_title"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pokedex_subtitle"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_search"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:drawableStart="@drawable/ic_search"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPokemon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_pokemon" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

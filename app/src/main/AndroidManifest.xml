@@ -21,7 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Listapokemonmock"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
